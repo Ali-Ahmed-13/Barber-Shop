@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&family=Playwrite+DK+Uloopet&family=Zain:wght@200;400;700;800&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Zain", sans-serif;
+  color: aquamarine;
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(255, 41, 41, 0.5)),
+      color-stop(rgba(164, 66, 0, 0.5)),
+      to(rgba(143, 159, 19, 0.5))
+    ),
+    url(../img/logo.png);
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 41, 41, 0.5),
+      rgba(164, 66, 0, 0.5),
+      rgba(143, 159, 19, 0.5)
+    ),
+    url(../img/logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 10px 0;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgba(255, 41, 41, 0.683)),
+    color-stop(rgb(164, 66, 0)),
+    to(rgba(143, 159, 19, 0.544))
+  );
+  background: linear-gradient(
+    to right,
+    rgb(255, 41, 41),
+    rgb(164, 66, 0),
+    rgba(143, 159, 19, 0.544)
+  );
+  color: aquamarine;
+}
+header .logo img {
+  width: 120px;
+}
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+header nav ul li {
+  margin: 0 10px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: aquamarine;
+  padding: 10px 20px;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(131, 5, 5, 0.544)),
+      to(rgb(143, 150, 14))
+    ),
+    url(../img/logo.png);
+  background: linear-gradient(
+      to right,
+      rgba(131, 5, 5, 0.544),
+      rgb(143, 150, 14)
+    ),
+    url(../img/logo.png);
+  border-radius: 5px;
+}
+h2 {
+  font-family: "Zain", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: rgba(127, 255, 212, 0.403);
+  text-align: center;
+  background: rgba(0, 0, 0, 0.373);
+  padding: 10px;
+}
+.content p {
+  text-align: center;
+  font-family: "Zain", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  background: rgba(214, 39, 39, 0.34);
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+.About-us,
+.Communication,
+.Services,
+.prices {
+  margin-bottom: 20px;
+  padding: 20px;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgba(73, 0, 0, 0.5)),
+    color-stop(rgba(84, 33, 0, 0.5)),
+    to(rgba(71, 81, 0, 0.5))
+  );
+  background: linear-gradient(
+    to right,
+    rgba(73, 0, 0, 0.5),
+    rgba(84, 33, 0, 0.5),
+    rgba(71, 81, 0, 0.5)
+  );
+  border-radius: 10px;
+}
+.images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.images img {
+  max-width: 30%;
+  margin: 10px;
+  border-radius: 10px;
+}
+.prices p span {
+  background-color: rgba(255, 255, 255, 0.462745098);
+  padding: 2px;
+  border-radius: 5px;
+  color: #000;
+}
+footer {
+  background: black;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+footer p {
+  font-size: 25px;
+}
+footer p span {
+  color: aquamarine;
+}
+footer p i {
+  font-size: 10px;
+}
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.links a {
+  text-decoration: none;
+  color: aquamarine;
+}
+.links a i {
+  margin-left: 5px;
+}
+@media (max-width: 992px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  header nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  header nav ul li {
+    margin: 10px 0;
+  }
+}
+@media (max-width: 768px) {
+  header nav ul li a {
+    padding: 7px 15px;
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  .content p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 576px) {
+  .images img {
+    max-width: 100%;
+  }
+  header nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  header nav ul li {
+    margin: 5px 0;
+  }
+}
